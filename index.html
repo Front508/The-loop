@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The loop</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="section header-menu">
+            <div class="section__wrapper container menu__wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+                <div class="menu">
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__items"><a class="menu__link menu__link-man" href="#">Для мужчин <svg 
+                                    width="5" height="4" viewBox="0 0 5 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 4L0.334936 0.25L4.66506 0.25L2.5 4Z" fill="#212121" />
+                                </svg>
+                            </a></li>
+                        <li class="mainmenu__items"><a class="menu__link menu__link-woman" href>Для женщин <svg 
+                                    width="5" height="4" viewBox="0 0 5 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path  d="M2.5 4L0.334936 0.25L4.66506 0.25L2.5 4Z" fill="#212121" />
+                                </svg>
+                        </li>
+                        <li class="mainmenu__items"><a class="menu__link menu__link-child" href="#">Для детей <svg 
+                                    width="5" height="4" viewBox="0 0 5 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 4L0.334936 0.25L4.66506 0.25L2.5 4Z" fill="#212121" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a class="logo header__logo" href="">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4_42)">
+                                <path
+                                    d="M9.33879 14.7235L4.07221 19.9901L9.33879 25.2566L14.6054 19.9901L9.33879 14.7235Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M19.9944 4.08541L14.7278 9.35199L19.9944 14.6186L25.261 9.35199L19.9944 4.08541Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M19.9914 25.3938L14.7248 30.6604L19.9913 35.927L25.2579 30.6604L19.9914 25.3938Z"
+                                    fill="#D7B399" />
+                                <path d="M30.647 14.7266L25.3804 19.9932L30.647 25.2597L35.9136 19.9932L30.647 14.7266Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M28.6102 12.6866L23.3436 17.9532L25.3828 19.9923L30.6494 14.7258L28.6102 12.6866Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M17.9547 23.3532L12.6881 28.6198L14.7273 30.659L19.9938 25.3924L17.9547 23.3532Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M25.2587 9.35299L19.9921 14.6196L22.0313 16.6587L27.2978 11.3921L25.2587 9.35299Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M14.6177 20.0053L9.35116 25.2719L11.3903 27.311L16.6569 22.0444L14.6177 20.0053Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M11.3788 12.6864L9.33961 14.7256L14.6062 19.9922L16.6453 17.953L11.3788 12.6864Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M14.727 9.34953L12.6879 11.3887L17.9544 16.6552L19.9936 14.6161L14.727 9.34953Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M25.3796 19.9905L23.3405 22.0296L28.607 27.2962L30.6462 25.257L25.3796 19.9905Z"
+                                    fill="#D7B399" />
+                                <path d="M22.046 23.342L20.0069 25.3812L25.2734 30.6477L27.3126 28.6086L22.046 23.342Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M27.3029 32.6971L25.2697 30.6639L20 35.9336L14.7303 30.6639L12.6971 32.6971L20 40L27.3029 32.6971Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M9.3361 14.7303L7.3029 12.6971L0 20L7.3029 27.3029L9.3361 25.2697L4.06639 20L9.3361 14.7303Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M32.6971 12.6971L30.6639 14.7303L35.9336 20L30.6639 25.2697L32.6971 27.3029L40 20L32.6971 12.6971Z"
+                                    fill="#D7B399" />
+                                <path
+                                    d="M25.2697 9.3361L27.3029 7.3029L20 0L12.6971 7.3029L14.7303 9.3361L20 4.06639L25.2697 9.3361Z"
+                                    fill="#D7B399" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4_42">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <p class="text__logo">THE LOOP</p>
+
+                </div>
+                <div class="menu">
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__items"><a class="menu__link menu__link-cash" href="#">Оплата</a></li>
+                        <li class="mainmenu__items"><a class="menu__link menu__link-delivery" href="#">Доставка</a></li>
+                    </ul>
+                </div>
+                <div class="basket">
+                    <ul class="basket__list">
+                        <li class="baket__item">
+                            <a class="basket__link" href="#">
+                                <svg width="91" height="30" viewBox="0 0 91 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.2936 11.4909L16.2385 2.40831C15.9632 2.13308 15.5505 1.85785 15.1376 1.85785C14.7248 1.85785 14.3119 1.99546 14.0367 2.40831L7.98165 11.4909H1.37615C0.550459 11.4909 0 12.0413 0 12.867C0 13.0046 0 13.1423 0 13.2799L3.44037 26.078C3.7156 27.179 4.81651 28.1423 6.05505 28.1423H23.945C25.1835 28.1423 26.2844 27.3166 26.5596 26.078L30 13.2799C30 13.1423 30 13.0046 30 12.867C30 12.0413 29.4495 11.4909 28.6239 11.4909H22.2936ZM11.0092 11.4909L15.1376 5.43583L19.2661 11.4909H11.0092ZM15.1376 22.5001C13.6239 22.5001 12.3853 21.2615 12.3853 19.7478C12.3853 18.234 13.6239 16.9955 15.1376 16.9955C16.6514 16.9955 17.8899 18.234 17.8899 19.7478C17.8899 21.2615 16.6514 22.5001 15.1376 22.5001Z"
+                                        fill="#212121" />
+                                    <path d="M45.25 17.5L58 10.1388L58 24.8612L45.25 17.5Z" fill="#D7B399" />
+                                    <path d="M58 10H91V25H58V10Z" fill="#D7B399" />
+                                </svg>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section banner">
+            <div class="container">
+                <div class="slider__wapper">
+                    <div class="slider__list">
+                        <div class="slider__item">
+                            <div class="slider__item-text">
+                                <p class="slider__text">Зимняя распродажа</p>
+                                <p class="slider__big-text">Скидка до 90%</p>
+                                <a href="#" class="button">Смотреть модели</a>
+                            </div>
+                            <div class="slider__item-price">
+                                <p class="slider__price--old">9900&#8381</p>
+                                <p class="slider__price--new">1 900 &#8381</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="slider__button slider__button--prev"><svg width="16" height="26"
+                        viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.90886 13.1815L13 3.09033" stroke="#D7B399" stroke-width="3" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                        <path d="M2.90886 13.1826L13 23.0903" stroke="#D7B399" stroke-width="3" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                    </svg>
+
+
+                </button>
+                <button type="button" class="slider__button slider__button--next">
+                    <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0911 13.0911L3 3" stroke="#D7B399" stroke-width="3" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                        <path d="M13.0911 13.0923L3 23" stroke="#D7B399" stroke-width="3" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                    </svg>
+
+
+                </button>
+
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="section delivery">
+            <div class="container">
+                <h2 class="delivery__h2">БЕСПЛАТНАЯ ДОСТАВКА <span> ОТ 3000₽</span></h2>
+                <p class="delivery__p">Сделайте заказ и получите подарок!</p>
+            </div>
+        </section>
+        <section class="section man-woman">
+            <div class="container">
+                <div class="man">
+                    <h2 class="man-woman__h2"><span>мужская</span> коллекция</h2>
+                    <p>Обувь, полуверы, костюмы</p>
+                    <a class="man-woman__link" href="#">
+                        <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="woman">
+                    <h2 class="man-woman__h2"><span>женская</span> коллекция</h2>
+                    <p>Обувь, полуверы, костюмы</p>
+                    <a class="man-woman__link" href="#">
+                        <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </div>
+        </section>
+        <section class="section dress">
+            <div class="container section__wrapper dress__wrapper">
+                <div class="dress__item dress__item--grey">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                    <p></p>
+                </div>
+                <div class="dress__item dress__item--cream">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--grey">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--cream">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--cream">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--grey">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--cream">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+                <div class="dress__item dress__item--grey">
+                    <p class="dress__text">ПЛАТЬЕ</p><img class="dress__img" src="img/tshirt.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section new-models">
+            <div class="container">
+                <h2 class="new-models__h2">Новые модели</h2>
+                <div class="catalog">
+                    <div class="catalog__card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bookmark-fill card__favorite" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                        </svg>
+                        <img class="cardimg" src="img/DressCard.png" alt="платье">
+                        <h3 class="card__title">Коктейльное платье</h3>
+                        <pc class="card__price">₽ 40 000</p>
+                    </div>
+                    <div class="catalog__card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bookmark-fill card__favorite" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                        </svg>
+                        <img class="cardimg" src="img/DressCard.png" alt="платье">
+                        <h3 class="card__title">Коктейльное платье</h3>
+                        <pc class="card__price">₽ 40 000</p>
+                    </div>
+                    <div class="catalog__card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bookmark-fill card__favorite" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                        </svg>
+                        <img class="cardimg" src="img/DressCard.png" alt="платье">
+                        <h3 class="card__title">Коктейльное платье</h3>
+                        <pc class="card__price">₽ 40 000</p>
+                    </div>
+                    <div class="catalog__card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bookmark-fill card__favorite" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                        </svg>
+                        <img class="cardimg" src="img/DressCard.png" alt="платье">
+                        <h3 class="card__title">Коктейльное платье</h3>
+                        <pc class="card__price">₽ 40 000</p>
+                    </div>
+
+                </div>
+
+
+
+                <button class="model__button">
+                    <svg width="220" height="55" viewBox="0 0 220 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="220" height="55" fill="#D7B399" />
+                        <path
+                            d="M36.888 34V22.8H41.544C42.728 22.8 43.656 23.0453 44.328 23.536C45.0107 24.016 45.352 24.7253 45.352 25.664C45.352 26.592 45.0267 27.296 44.376 27.776C43.7253 28.2453 42.872 28.48 41.816 28.48L42.088 28.08C43.336 28.08 44.2853 28.3253 44.936 28.816C45.5867 29.3067 45.912 30.0267 45.912 30.976C45.912 31.936 45.5707 32.6827 44.888 33.216C44.216 33.7387 43.2027 34 41.848 34H36.888ZM38.056 33.056H41.848C42.7973 33.056 43.5173 32.88 44.008 32.528C44.4987 32.176 44.744 31.632 44.744 30.896C44.744 30.1707 44.4987 29.6373 44.008 29.296C43.5173 28.9547 42.7973 28.784 41.848 28.784H38.056V33.056ZM38.056 27.872H41.48C42.344 27.872 43.0053 27.7013 43.464 27.36C43.9333 27.008 44.168 26.4907 44.168 25.808C44.168 25.1253 43.9333 24.6133 43.464 24.272C43.0053 23.92 42.344 23.744 41.48 23.744H38.056V27.872ZM54.2484 34.096C53.4057 34.096 52.627 33.9573 51.9124 33.68C51.1977 33.392 50.579 32.992 50.0564 32.48C49.5337 31.968 49.123 31.3653 48.8244 30.672C48.5364 29.9787 48.3924 29.2213 48.3924 28.4C48.3924 27.5787 48.5364 26.8213 48.8244 26.128C49.123 25.4347 49.5337 24.832 50.0564 24.32C50.5897 23.808 51.2137 23.4133 51.9284 23.136C52.643 22.848 53.4217 22.704 54.2644 22.704C55.075 22.704 55.8377 22.8427 56.5524 23.12C57.267 23.3867 57.8697 23.792 58.3604 24.336L57.6084 25.088C57.1497 24.6187 56.643 24.2827 56.0884 24.08C55.5337 23.8667 54.9364 23.76 54.2964 23.76C53.6244 23.76 53.0004 23.8773 52.4244 24.112C51.8484 24.336 51.347 24.6613 50.9204 25.088C50.4937 25.504 50.1577 25.9947 49.9124 26.56C49.6777 27.1147 49.5604 27.728 49.5604 28.4C49.5604 29.072 49.6777 29.6907 49.9124 30.256C50.1577 30.8107 50.4937 31.3013 50.9204 31.728C51.347 32.144 51.8484 32.4693 52.4244 32.704C53.0004 32.928 53.6244 33.04 54.2964 33.04C54.9364 33.04 55.5337 32.9333 56.0884 32.72C56.643 32.5067 57.1497 32.1653 57.6084 31.696L58.3604 32.448C57.8697 32.992 57.267 33.4027 56.5524 33.68C55.8377 33.9573 55.0697 34.096 54.2484 34.096ZM62.3415 27.808H68.2615V28.816H62.3415V27.808ZM62.4695 32.976H69.2055V34H61.2855V22.8H68.9655V23.824H62.4695V32.976ZM76.9799 34V22.8H77.9559L83.0759 31.536H82.5639L87.6359 22.8H88.6119V34H87.4759V24.576H87.7479L83.0759 32.576H82.5159L77.8119 24.576H78.1159V34H76.9799ZM97.7781 34.096C96.9355 34.096 96.1515 33.9573 95.4261 33.68C94.7115 33.392 94.0875 32.992 93.5541 32.48C93.0315 31.9573 92.6208 31.3547 92.3221 30.672C92.0341 29.9787 91.8901 29.2213 91.8901 28.4C91.8901 27.5787 92.0341 26.8267 92.3221 26.144C92.6208 25.4507 93.0315 24.848 93.5541 24.336C94.0875 23.8133 94.7115 23.4133 95.4261 23.136C96.1408 22.848 96.9248 22.704 97.7781 22.704C98.6208 22.704 99.3995 22.848 100.114 23.136C100.829 23.4133 101.447 23.808 101.97 24.32C102.503 24.832 102.914 25.4347 103.202 26.128C103.501 26.8213 103.65 27.5787 103.65 28.4C103.65 29.2213 103.501 29.9787 103.202 30.672C102.914 31.3653 102.503 31.968 101.97 32.48C101.447 32.992 100.829 33.392 100.114 33.68C99.3995 33.9573 98.6208 34.096 97.7781 34.096ZM97.7781 33.04C98.4501 33.04 99.0688 32.928 99.6341 32.704C100.21 32.4693 100.706 32.144 101.122 31.728C101.549 31.3013 101.879 30.8107 102.114 30.256C102.349 29.6907 102.466 29.072 102.466 28.4C102.466 27.728 102.349 27.1147 102.114 26.56C101.879 25.9947 101.549 25.504 101.122 25.088C100.706 24.6613 100.21 24.336 99.6341 24.112C99.0688 23.8773 98.4501 23.76 97.7781 23.76C97.1061 23.76 96.4821 23.8773 95.9061 24.112C95.3301 24.336 94.8288 24.6613 94.4021 25.088C93.9861 25.504 93.6555 25.9947 93.4101 26.56C93.1755 27.1147 93.0581 27.728 93.0581 28.4C93.0581 29.0613 93.1755 29.6747 93.4101 30.24C93.6555 30.8053 93.9861 31.3013 94.4021 31.728C94.8288 32.144 95.3301 32.4693 95.9061 32.704C96.4821 32.928 97.1061 33.04 97.7781 33.04ZM114.083 33.44V23.824H108.723L108.627 26.544C108.595 27.3867 108.542 28.1973 108.467 28.976C108.403 29.744 108.296 30.4373 108.147 31.056C108.008 31.664 107.816 32.16 107.571 32.544C107.336 32.928 107.027 33.152 106.643 33.216L105.347 32.976C105.774 32.9973 106.126 32.8427 106.403 32.512C106.691 32.1813 106.91 31.7173 107.059 31.12C107.219 30.5227 107.336 29.824 107.411 29.024C107.486 28.224 107.539 27.36 107.571 26.432L107.699 22.8H115.251V33.44H114.083ZM104.931 36.512L104.947 32.976H116.931V36.512H115.827V34H106.051L106.035 36.512H104.931ZM120.882 27.808H126.802V28.816H120.882V27.808ZM121.01 32.976H127.746V34H119.826V22.8H127.506V23.824H121.01V32.976ZM130.037 34.096C129.888 34.096 129.744 34.0853 129.605 34.064C129.466 34.0533 129.312 34.0267 129.141 33.984L129.237 32.928C129.418 32.9707 129.594 32.992 129.765 32.992C130.245 32.992 130.629 32.8053 130.917 32.432C131.216 32.048 131.44 31.4613 131.589 30.672C131.738 29.872 131.834 28.848 131.877 27.6L132.037 22.8H139.637V34H138.469V23.504L138.773 23.824H132.789L133.077 23.488L132.933 27.568C132.89 28.688 132.81 29.6587 132.693 30.48C132.576 31.2907 132.405 31.968 132.181 32.512C131.957 33.0453 131.669 33.4453 131.317 33.712C130.965 33.968 130.538 34.096 130.037 34.096ZM143.895 34V22.8H145.063V32.08L152.232 22.8H153.304V34H152.135V24.736L144.967 34H143.895Z"
+                            fill="white" />
+                        <path
+                            d="M185.354 28.3536C185.549 28.1583 185.549 27.8417 185.354 27.6464L182.172 24.4645C181.976 24.2692 181.66 24.2692 181.464 24.4645C181.269 24.6597 181.269 24.9763 181.464 25.1716L184.293 28L181.464 30.8284C181.269 31.0237 181.269 31.3403 181.464 31.5355C181.66 31.7308 181.976 31.7308 182.172 31.5355L185.354 28.3536ZM165 28.5L185 28.5V27.5L165 27.5V28.5Z"
+                            fill="white" />
+                    </svg>
+
+                </button>
+            </div>
+        </section>
+        <section class="section subscribe">
+            <div class="container">
+                7
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                8
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section footer-menu">
+            <div class="container">
+                9
+            </div>
+        </section>
+        <section class="section copyright">
+            <div class="container">
+                10
+            </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus = document.querySelectorAll(".menu");
+        btn.addEventListener("click", () => {
+            for (let el of menus ) {
+                el.classList.toggle("show");
+            }
+        })
+    </script>
+</body>
+
+</html>
